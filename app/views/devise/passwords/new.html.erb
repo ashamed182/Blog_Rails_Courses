@@ -1,0 +1,23 @@
+<div class="row center-xs">
+  <div class="col-xs-8 col-md-6">
+    <div class="box text-left log-in">
+		<h2 class="log-in-title">Forgot your password?</h2>
+
+		<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+		  <%= devise_error_messages! %>
+
+			<div class="field">
+				<%= f.label :email, class:"label-log-in" %><br />
+				<%= f.email_field :email, autofocus: true, class:"form-control input-log-in"  %>
+			</div>
+
+		  	<div class="actions">
+		    	<%= f.submit "Send me reset password instructions", class:"btn btn-secundary white large-padding"  %>
+		  	</div>
+		<% end %>
+			<div class="actions">
+				<%= render "devise/shared/links" %>
+			</div> 
+		</div>
+	</div>
+</div> 

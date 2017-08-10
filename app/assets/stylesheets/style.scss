@@ -1,0 +1,163 @@
+html,body{
+	margin:0px;
+	font-family: 'Roboto Slab', serif;
+}
+
+.btn{
+	background-color: inherit;
+	border: none;
+	outline: none;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+a,a:visited{
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+}
+.logo{
+	font-size: 1.2em;
+}
+.no-margin{
+	margin: 0px;
+}
+
+.red{
+	color:#f44250 !important;
+}
+
+.blue{
+	color:#5394d1 !important;
+}
+
+.be-red {
+	background-color: #f44250;
+}
+.white{
+	color: #fff;
+}
+
+.grey{
+	color:#616161;
+}
+
+.large-padding{
+	padding: 15px 10px;
+}
+
+.hidden{
+	display:none !important;
+}
+
+.no-point{
+	list-style-type: none;
+}
+
+.field, .actions{
+	margin-top:1em;
+}
+
+#comment_body{
+	width: 800px;
+	height:250px;
+}
+
+.custom_button{
+	height:35px;
+}
+
+.log-in{
+	background-color: #f44250;
+    padding: 25px 25px;
+    width: 365px;
+    margin-left: 125px;
+    margin-top: 85px;
+}
+
+.btn-secundary{
+	background-color: #000;
+	width: 361px;
+}
+
+.log-in-title{
+	text-align: center;
+    color: #fff;
+}
+
+.label-log-in{
+	color:#fff !important;
+}
+.input-log-in{
+	background-color: #fff !important;
+    padding-left: 10px !important;
+    width: 350px !important;
+    border-radius: 5px;
+}
+
+.top-space{
+	margin-top: 1em;
+	padding: 10px 10px;
+}
+
+.text-left{
+	text-align: left;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.text-right{
+	text-align:right;
+}
+
+.text-justify{
+	text-align: justify;
+}
+
+.be-big{
+	font-size: 2em;
+}
+
+.be-small{
+	font-size:12px;
+}
+
+.underline{
+	text-decoration: underline;
+}
+
+.bottom-space{
+	margin-bottom: 2em;
+}
+
+.background-cover{
+	background-position: center;
+	background-size: cover;
+}
+
+.article-height{
+	height:150px;
+}
+
+.relative{
+	position:relative;
+}
+
+.absolute{
+	position:absolute;
+}
+
+.form-control{
+	border: none;
+	border-bottom: 1px solid;
+	outline: none;
+	width: 100%;
+	display: block;
+	padding: 10px 0px;
+	font-size: 1.2em;
+	margin-top: 5px;
+}
+
+

@@ -1,0 +1,36 @@
+<div class="row center-xs">
+  <div class="col-xs-8 col-md-6">
+    <div class="box text-left log-in">
+      <h2 class="log-in-title">Crear cuenta</h2>
+
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+        <%= devise_error_messages! %>
+
+        <div class="field">
+          <%= f.label :email, class:"label-log-in" %><br />
+          <%= f.email_field :email, autofocus: true, class:"form-control input-log-in" %>
+        </div>
+
+        <div class="field">
+          <%= f.label :password, class:"label-log-in" %>
+          <% if @minimum_password_length %>
+          <em class="label-log-in">(<%= @minimum_password_length %> Caracteres mínimos)</em>
+          <% end %><br />
+          <%= f.password_field :password, autocomplete: "off", class:"form-control input-log-in" %>
+        </div>
+
+        <div class="field">
+          <%= f.label :password_confirmation, class:"label-log-in" %><br />
+          <%= f.password_field :password_confirmation, autocomplete: "off", class:"form-control input-log-in" %>
+        </div>
+
+        <div class="actions">
+          <%= f.submit "Crear cuenta", class:"btn btn-secundary white large-padding" %>
+        </div>
+      <% end %>
+      <div class="actions">
+        <%= render "devise/shared/links" %>
+      </div>
+    </div>
+  </div>
+</div>
